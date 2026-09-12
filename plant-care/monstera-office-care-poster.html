@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monstera Deliciosa · Office Care Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1f2e24;
+      --forest: #2f5d45;
+      --leaf: #4a7a5c;
+      --mist: #e8f0e6;
+      --paper: #f7faf5;
+      --wash: #d7e6d4;
+      --rule: #b7cbb8;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #cfd9cc;
+      color: var(--ink);
+      font-family: "Source Sans 3", sans-serif;
+    }
+
+    .sheet {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 24px auto;
+      padding: 0.55in 0.6in 0.45in;
+      background:
+        radial-gradient(ellipse at 70% 12%, rgba(74, 122, 92, 0.12), transparent 55%),
+        linear-gradient(180deg, var(--mist) 0%, var(--paper) 38%, var(--paper) 100%);
+      box-shadow: 0 18px 40px rgba(31, 46, 36, 0.18);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sheet::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 12% 18%, rgba(47, 93, 69, 0.05) 0 2px, transparent 3px),
+        radial-gradient(circle at 80% 70%, rgba(47, 93, 69, 0.04) 0 2px, transparent 3px);
+      background-size: 28px 28px, 36px 36px;
+      pointer-events: none;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .hero-art {
+      width: 100%;
+      height: 2.55in;
+      margin: 0 auto 0.18in;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(ellipse at center, var(--wash) 0%, transparent 70%);
+    }
+
+    .hero-art svg {
+      width: 3.2in;
+      height: auto;
+      filter: drop-shadow(0 8px 16px rgba(31, 46, 36, 0.12));
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 700;
+      font-size: 42px;
+      letter-spacing: 0.04em;
+      color: var(--forest);
+      line-height: 1;
+    }
+
+    .subtitle {
+      margin: 0.12in 0 0;
+      font-size: 15px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--leaf);
+      font-weight: 600;
+    }
+
+    .caption {
+      margin: 0.1in 0 0.22in;
+      font-size: 14px;
+      color: #5a6f60;
+      font-style: italic;
+    }
+
+    .grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.28in 0.35in;
+    }
+
+    section {
+      border-top: 1.5px solid var(--rule);
+      padding-top: 0.16in;
+    }
+
+    .num {
+      display: inline-block;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--forest);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.04in;
+    }
+
+    h2 {
+      margin: 0 0 0.08in;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 18px;
+      color: var(--forest);
+      line-height: 1.15;
+    }
+
+    p {
+      margin: 0;
+      font-size: 13.5px;
+      line-height: 1.45;
+      color: var(--ink);
+    }
+
+    strong { color: var(--forest); font-weight: 700; }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      margin-top: 0.32in;
+      padding-top: 0.14in;
+      border-top: 1.5px solid var(--rule);
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--leaf);
+      font-weight: 600;
+    }
+
+    .print-hint {
+      max-width: 8.5in;
+      margin: 0 auto 16px;
+      text-align: center;
+      font-size: 14px;
+      color: #445448;
+    }
+
+    @media print {
+      @page { size: letter; margin: 0.35in; }
+      html, body { background: white; }
+      .print-hint { display: none; }
+      .sheet {
+        margin: 0;
+        box-shadow: none;
+        width: auto;
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .sheet {
+        width: min(100% - 24px, 8.5in);
+        margin: 12px auto;
+        padding: 28px 22px;
+      }
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 34px; }
+    }
+  </style>
+</head>
+<body>
+  <p class="print-hint">Open this file in a browser → Print → Save as PDF or print Letter size.</p>
+  <article class="sheet">
+    <header>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="leafGrad" x1="40" y1="20" x2="180" y2="160" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#6f9a74"/>
+              <stop offset="0.55" stop-color="#3f7552"/>
+              <stop offset="1" stop-color="#2a553c"/>
+            </linearGradient>
+          </defs>
+          <path d="M112 168c-6-28-8-54-4-78 18-8 42-4 58 14 8 22-2 48-28 64-8 4-18 4-26 0z" fill="url(#leafGrad)"/>
+          <path d="M108 168c6-30 4-58-8-82-22-4-44 10-52 34-2 24 18 48 46 54 5 1 10-1 14-6z" fill="#4d815c"/>
+          <path d="M110 90c2 26 2 52-2 78" stroke="#214632" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M108 112c-18 2-32 12-38 28M112 108c16 0 30 8 38 22M106 130c-14 6-22 16-24 28M114 128c14 4 24 14 28 26" stroke="#214632" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <ellipse cx="88" cy="98" rx="7" ry="10" fill="#eef5ec" transform="rotate(-18 88 98)"/>
+          <ellipse cx="132" cy="104" rx="6" ry="9" fill="#eef5ec" transform="rotate(16 132 104)"/>
+          <ellipse cx="96" cy="138" rx="5" ry="8" fill="#eef5ec" transform="rotate(-8 96 138)"/>
+          <path d="M70 70c18-28 48-42 78-34 8 18-2 40-24 52-22 8-44 4-54-18z" fill="#5f8f68" opacity="0.9"/>
+        </svg>
+      </div>
+      <h1>MONSTERA DELICIOSA</h1>
+      <p class="subtitle">Swiss Cheese Plant · Office Care Guide</p>
+      <p class="caption">Your cutting · currently rooting in water</p>
+    </header>
+
+    <div class="grid">
+      <section>
+        <div class="num">01</div>
+        <h2>Water or Soil?</h2>
+        <p>
+          Keep it in water while roots form, and <strong>change the water weekly</strong>.
+          Transfer to soil when white roots are <strong>2–4 inches long</strong>.
+          Use a chunky aroid mix: potting soil + perlite + orchid bark.
+          After potting, water when the top 1–2 inches of soil feel dry.
+        </p>
+      </section>
+
+      <section>
+        <div class="num">02</div>
+        <h2>Attach to a Trellis</h2>
+        <p>
+          Monsteras are climbers. Put a <strong>moss pole or wood trellis</strong> in the pot,
+          set the stem against it, and loosely secure with soft velcro plant ties or twine
+          every few inches. Guide aerial roots toward the pole.
+          Never cinch tight or force the leaves.
+        </p>
+      </section>
+
+      <section>
+        <div class="num">03</div>
+        <h2>Grow Light &amp; Schedule</h2>
+        <p>
+          Use a <strong>full-spectrum white LED</strong> grow light (~4000–6500K).
+          Skip colored decorative LEDs—they look fun but are weak for growth.
+          Run the light <strong>12–14 hours daily</strong>, then 10–12 hours of dark.
+          An outlet timer makes this easy.
+        </p>
+      </section>
+
+      <section>
+        <div class="num">04</div>
+        <h2>Light Distance</h2>
+        <p>
+          Keep the grow light <strong>12–24 inches</strong> from the leaves.
+          Start farther away; move closer if growth looks leggy.
+          If leaves feel hot or bleach pale, back the light up.
+          Side lighting is fine—avoid blasting one spot all day.
+        </p>
+      </section>
+    </div>
+
+    <footer>Bright indirect light · Climbing aroid · Print &amp; pin near your plant</footer>
+  </article>
+</body>
+</html>
